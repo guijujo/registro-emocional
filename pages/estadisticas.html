@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registro Emocional Web - Proyecto educativo del Tecno-LAB i33">
+    <title>Registro Emocional | Estadísticas</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <section class="encabezado-contenido" aria-label="Identidad del proyecto">
+            <img class="logo logo-escuela" src="../assets/logo-I-33.png" alt="Logo de la Escuela Integral Artística i33">
+
+            <div class="marca">
+                <p class="marca-subtitulo">Tecno-LAB i33</p>
+                <p class="marca-titulo">Registro Emocional</p>
+            </div>
+
+            <img class="logo logo-proyecto" src="../assets/logo-nosotros.jpeg" alt="Logo del proyecto Nosotros">
+        </section>
+    </header>
+
+    <nav class="navegacion-principal" aria-label="Navegación principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li><a class="nav-link" href="registrar-emocion.html">Registrar emoción</a></li>
+            <li><a class="nav-link" href="historial.html">Historial</a></li>
+            <li><a class="nav-link active" href="estadisticas.html">Estadísticas</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido" class="contenedor">
+        <section class="encabezado-pagina" aria-labelledby="titulo-estadisticas">
+            <p class="etiqueta">Resumen simple</p>
+            <h1 id="titulo-estadisticas">Estadísticas</h1>
+            <p>Una mirada rápida a los registros guardados.</p>
+        </section>
+
+        <section aria-labelledby="titulo-numeros">
+            <h2 id="titulo-numeros">Datos principales</h2>
+
+            <div class="tarjetas-resumen">
+                <article class="card">
+                    <h3>Cantidad de registros</h3>
+                    <p id="cantidad-registros">0</p>
+                </article>
+
+                <article class="card">
+                    <h3>Intensidad promedio</h3>
+                    <p id="intensidad-promedio">0/100</p>
+                </article>
+
+                <article class="card">
+                    <h3>Emoción más frecuente</h3>
+                    <p id="emocion-frecuente">-</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-barras">
+            <h2 id="titulo-barras">Frecuencia por emoción</h2>
+
+            <div id="barras-emociones" class="barras-emociones">
+                <article class="barra-emocion">
+                    <header>
+                        <h3>Felicidad</h3>
+                        <span>80%</span>
+                    </header>
+                    <progress value="80" max="100">80%</progress>
+                </article>
+
+                <article class="barra-emocion">
+                    <header>
+                        <h3>Calma</h3>
+                        <span>60%</span>
+                    </header>
+                    <progress value="60" max="100">60%</progress>
+                </article>
+
+                <article class="barra-emocion">
+                    <header>
+                        <h3>Ansiedad</h3>
+                        <span>40%</span>
+                    </header>
+                    <progress value="40" max="100">40%</progress>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p><strong>Registro Emocional Web</strong></p>
+        <p>Tecno-LAB i33 · Escuela Integral Artística i33</p>
+        <p>Tus registros son privados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
