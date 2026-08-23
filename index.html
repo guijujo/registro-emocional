@@ -3,35 +3,95 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro Emocional</title>
-    <link rel="stylesheet" href="/styles/main.css">
-    <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Registro Emocional Web - Proyecto educativo del Tecno-LAB i33">
+    <title>Registro Emocional | Inicio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="/pages/registro.html">Registro</a></li>
-                <li><a href="/pages/historial.html">Historial</a></li>
-                <li><a href="/pages/estadisticas.html">Estadísticas</a></li>
-            </ul>
-        </nav>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <section class="encabezado-contenido" aria-label="Identidad del proyecto">
+            <img class="logo logo-escuela" src="assets/logo-I-33.png" alt="Logo de la Escuela Integral Artística i33">
+
+            <div class="marca">
+                <p class="marca-subtitulo">Tecno-LAB i33</p>
+                <p class="marca-titulo">Registro Emocional</p>
+            </div>
+
+            <img class="logo logo-proyecto" src="assets/logo-nosotros.jpeg" alt="Logo del proyecto Nosotros">
+        </section>
     </header>
-    <main>
-        <h1>Registro Emocional</h1>
-        <p>Bienvenido al registro emocional.</p>
-    </main>
-    <sidebar>
-        <h2>Opciones</h2>
-        <ul>
-            <li><a href="/pages/registrar-emocion.html">Registrar Emoción</a></li>
-            <li><a href="/pages/historial.html">Ver Historial</a></li>
+
+    <nav class="navegacion-principal" aria-label="Navegación principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link active" href="index.html">Inicio</a></li>
+            <li><a class="nav-link" href="pages/registrar-emocion.html">Registrar emoción</a></li>
+            <li><a class="nav-link" href="pages/historial.html">Historial</a></li>
+            <li><a class="nav-link" href="pages/estadisticas.html">Estadísticas</a></li>
         </ul>
-    </sidebar>
-    <footer>
-        <p>&copy; 2026 Registro Emocional. Todos los derechos reservados.</p>
+    </nav>
+
+    <main id="contenido" class="contenedor">
+        <section class="hero" aria-labelledby="titulo-inicio">
+            <p class="etiqueta">Registro Emocional Web</p>
+            <h1 id="titulo-inicio">Registro Emocional</h1>
+            <p>Un momento para reconocer cómo te sentís.</p>
+        </section>
+
+        <section aria-labelledby="titulo-resumen">
+            <h2 id="titulo-resumen">Resumen</h2>
+
+            <div class="tarjetas-resumen">
+                <article class="card">
+                    <h3>Último registro</h3>
+                    <p id="resumen-ultimo">Sin registros todavía</p>
+                </article>
+
+                <article class="card">
+                    <h3>Intensidad</h3>
+                    <p id="resumen-intensidad">-</p>
+                </article>
+
+                <article class="card">
+                    <h3>Emoción más reciente</h3>
+                    <p id="resumen-emocion">-</p>
+                </article>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-ultimos">
+            <div class="seccion-encabezado">
+                <h2 id="titulo-ultimos">Últimos registros</h2>
+                <a class="link-simple" href="pages/historial.html">Ver todos</a>
+            </div>
+
+            <div id="ultimos-registros" class="lista-registros">
+                <article class="registro">
+                    <time datetime="2026-08-21">21/08/2026</time>
+                    <h3>😊 Felicidad</h3>
+                    <p>Intensidad: 80/100</p>
+                    <p>Hoy tuve un buen día.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="acciones-rapidas" aria-labelledby="titulo-acciones">
+            <h2 id="titulo-acciones">Acceso rápido</h2>
+            <div class="grupo-botones">
+                <a class="boton boton-principal" href="pages/registrar-emocion.html">Registrar emoción</a>
+                <a class="boton boton-secundario" href="pages/historial.html">Ver historial</a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p><strong>Registro Emocional Web</strong></p>
+        <p>Tecno-LAB i33 · Escuela Integral Artística i33</p>
+        <p>Tus registros son privados.</p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
-<script src="/scripts/main.js"></script>
 </html>

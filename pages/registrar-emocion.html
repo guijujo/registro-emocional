@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registro Emocional Web - Proyecto educativo del Tecno-LAB i33">
+    <title>Registro Emocional | Registrar</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <section class="encabezado-contenido" aria-label="Identidad del proyecto">
+            <img class="logo logo-escuela" src="../assets/logo-I-33.png" alt="Logo de la Escuela Integral Artística i33">
+
+            <div class="marca">
+                <p class="marca-subtitulo">Tecno-LAB i33</p>
+                <p class="marca-titulo">Registro Emocional</p>
+            </div>
+
+            <img class="logo logo-proyecto" src="../assets/logo-nosotros.jpeg" alt="Logo del proyecto Nosotros">
+        </section>
+    </header>
+
+    <nav class="navegacion-principal" aria-label="Navegación principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li><a class="nav-link active" href="registrar-emocion.html">Registrar emoción</a></li>
+            <li><a class="nav-link" href="historial.html">Historial</a></li>
+            <li><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido" class="contenedor contenido-dos-columnas">
+        <section class="panel-principal" aria-labelledby="titulo-formulario">
+            <p class="etiqueta">Nuevo registro</p>
+            <h1 id="titulo-formulario">Registrar emoción</h1>
+            <p class="texto-intro">Elegí una emoción, indicá su intensidad y agregá una observación breve.</p>
+
+            <form id="form-registro" class="formulario-registro">
+                <div class="campo">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha" required>
+                </div>
+
+                <fieldset class="campo">
+                    <legend>Emoción</legend>
+
+                    <div class="opciones-emocion">
+                        <input type="radio" id="emocion-felicidad" name="emocion" value="felicidad" required>
+                        <label class="emocion-opcion" for="emocion-felicidad">
+                            <span aria-hidden="true">😊</span>
+                            Felicidad
+                        </label>
+
+                        <input type="radio" id="emocion-calma" name="emocion" value="calma">
+                        <label class="emocion-opcion" for="emocion-calma">
+                            <span aria-hidden="true">😌</span>
+                            Calma
+                        </label>
+
+                        <input type="radio" id="emocion-ansiedad" name="emocion" value="ansiedad">
+                        <label class="emocion-opcion" for="emocion-ansiedad">
+                            <span aria-hidden="true">😟</span>
+                            Ansiedad
+                        </label>
+
+                        <input type="radio" id="emocion-tristeza" name="emocion" value="tristeza">
+                        <label class="emocion-opcion" for="emocion-tristeza">
+                            <span aria-hidden="true">😢</span>
+                            Tristeza
+                        </label>
+
+                        <input type="radio" id="emocion-enojo" name="emocion" value="enojo">
+                        <label class="emocion-opcion" for="emocion-enojo">
+                            <span aria-hidden="true">😠</span>
+                            Enojo
+                        </label>
+
+                        <input type="radio" id="emocion-motivacion" name="emocion" value="motivacion">
+                        <label class="emocion-opcion" for="emocion-motivacion">
+                            <span aria-hidden="true">💪</span>
+                            Motivación
+                        </label>
+                    </div>
+
+                    <p id="emocion-seleccionada" class="ayuda-formulario" aria-live="polite">Elegí una emoción.</p>
+                </fieldset>
+
+                <div class="campo">
+                    <label for="intensidad">Intensidad</label>
+                    <input type="range" id="intensidad" name="intensidad" min="1" max="100" value="50">
+                    <output id="valor-intensidad" for="intensidad">Intensidad: 50/100</output>
+                </div>
+
+                <div class="campo">
+                    <label for="observacion">Observación</label>
+                    <textarea id="observacion" name="observacion" rows="5" maxlength="240" required placeholder="Escribí una observación breve"></textarea>
+                </div>
+
+                <button class="boton boton-principal" type="submit">Registrar emoción</button>
+                <p id="mensaje-formulario" class="mensaje-formulario" aria-live="polite"></p>
+            </form>
+        </section>
+
+        <aside class="nota-privacidad" aria-labelledby="titulo-privacidad">
+            <h2 id="titulo-privacidad">Nota de privacidad</h2>
+            <p>Este proyecto guarda los registros en el navegador como práctica educativa. No reemplaza el acompañamiento de una persona adulta o profesional.</p>
+        </aside>
+    </main>
+
+    <footer class="pie">
+        <p><strong>Registro Emocional Web</strong></p>
+        <p>Tecno-LAB i33 · Escuela Integral Artística i33</p>
+        <p>Tus registros son privados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

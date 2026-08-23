@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Registro Emocional Web - Proyecto educativo del Tecno-LAB i33">
+    <title>Registro Emocional | Historial</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+    <header class="encabezado">
+        <section class="encabezado-contenido" aria-label="Identidad del proyecto">
+            <img class="logo logo-escuela" src="../assets/logo-I-33.png" alt="Logo de la Escuela Integral Artística i33">
+
+            <div class="marca">
+                <p class="marca-subtitulo">Tecno-LAB i33</p>
+                <p class="marca-titulo">Registro Emocional</p>
+            </div>
+
+            <img class="logo logo-proyecto" src="../assets/logo-nosotros.jpeg" alt="Logo del proyecto Nosotros">
+        </section>
+    </header>
+
+    <nav class="navegacion-principal" aria-label="Navegación principal">
+        <ul class="nav-lista">
+            <li><a class="nav-link" href="../index.html">Inicio</a></li>
+            <li><a class="nav-link" href="registrar-emocion.html">Registrar emoción</a></li>
+            <li><a class="nav-link active" href="historial.html">Historial</a></li>
+            <li><a class="nav-link" href="estadisticas.html">Estadísticas</a></li>
+        </ul>
+    </nav>
+
+    <main id="contenido" class="contenedor">
+        <section class="encabezado-pagina" aria-labelledby="titulo-historial">
+            <p class="etiqueta">Seguimiento personal</p>
+            <h1 id="titulo-historial">Historial</h1>
+            <p>Estos son los registros emocionales guardados en este navegador.</p>
+        </section>
+
+        <section class="panel-filtros" aria-labelledby="titulo-filtros">
+            <h2 id="titulo-filtros">Filtros</h2>
+            <div class="grupo-filtros" role="group" aria-label="Filtrar registros">
+                <button class="filtro active" type="button" data-filtro="todos">Todos</button>
+                <button class="filtro" type="button" data-filtro="semana">Esta semana</button>
+                <button class="filtro" type="button" data-filtro="mes">Este mes</button>
+            </div>
+        </section>
+
+        <section aria-labelledby="titulo-lista">
+            <h2 id="titulo-lista">Registros</h2>
+
+            <div id="lista-registros" class="lista-registros">
+                <article class="registro">
+                    <time datetime="2026-08-21">21/08/2026</time>
+                    <h3>😊 Felicidad</h3>
+                    <p>Intensidad: 80/100</p>
+                    <p>Hoy tuve un buen día.</p>
+                </article>
+
+                <article class="registro">
+                    <time datetime="2026-08-20">20/08/2026</time>
+                    <h3>😌 Calma</h3>
+                    <p>Intensidad: 60/100</p>
+                    <p>Respiré un momento antes de seguir con mis actividades.</p>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie">
+        <p><strong>Registro Emocional Web</strong></p>
+        <p>Tecno-LAB i33 · Escuela Integral Artística i33</p>
+        <p>Tus registros son privados.</p>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
