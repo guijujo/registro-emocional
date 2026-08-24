@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Proyecto colaborativo del Tecno-LAB i33 de la Escuela Integral Artística i33.
+Proyecto colaborativo del Tecno-LAB & Proyecto Nosotros.
 
 La aplicación permite registrar emociones de forma sencilla desde el navegador. Está pensada como práctica educativa para estudiantes que están comenzando a aprender desarrollo web.
 
