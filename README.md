@@ -57,7 +57,7 @@ Los registros se guardan con `localStorage` como recurso educativo para aprender
 
 ### Docentes
 
-- Frutos, Cinthi
+- Frutos, Cinthia
 - García, Guillermo
 
 ### Estudiantes
